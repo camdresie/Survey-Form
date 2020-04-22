@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Full page styles */
+
+body {
+    background-color:beige;
+}
+.form {
+    width: 80%;
+    background-color: slateblue;
+    margin: 0 auto;
+}
