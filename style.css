@@ -4,11 +4,58 @@
 
 /* Full page styles */
 
-body {
-    background-color:beige;
+.wrapper {
+    background-image: url(img/people-working.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 15px;
 }
-.form {
-    width: 80%;
-    background-color: slateblue;
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    background-color: slategray;
+    opacity: .8;
+    margin-top: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    width: 65%;
     margin: 0 auto;
+}
+
+
+.form {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    border-radius: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-element {
+    width: 80%;
+    height: 3em;
+    border-radius: 2%;
+    margin-top: 10px;
+}
+
+.form-parent {
+    margin-top: 35px;
 }
