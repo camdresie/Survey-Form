@@ -17,31 +17,31 @@
                 <form id="survey-form" method="GET">
 
                     <div class="name form-parent">
-                        <label id="name-label" for="name">Name</label>        <!-----NAME INPUT ----->
+                        <label class="form-element-title" id="name-label" for="name">Name</label>        <!-----NAME INPUT ----->
                         <br>
                         <input class="form-element" type="text" name="name" id="name" placeholder="Enter your first and last name" required>
                     </div>
 
                     <div class="email form-parent">
-                        <label id="email-label" for="email">Email</label>  <!-----EMAIL INPUT ----->
+                        <label class="form-element-title" id="email-label" for="email">Email</label>  <!-----EMAIL INPUT ----->
                         <br>    
                         <input class="form-element" type="email" name="email" id="email" placeholder="example@example.com" required>
                     </div>
 
                     <div class="age form-parent">
-                        <label for="age">Law School Graduation Year</label>         <!-----CLASS YEAR INPUT ----->
+                        <label class="form-element-title" for="age">Law School Graduation Year</label>         <!-----CLASS YEAR INPUT ----->
                         <br>
                         <input class="form-element" type="text" name="age" id="age" placeholder="ex. 2006" pattern="[0-9]{4}" required>
                     </div>
 
                     <div class="experience form-parent">
-                        <label id="number-label" for="experience">Years of Experience in Current Practice Area</label>       <!----- YEARS OF EXPERIENCE INPUT ----->
+                        <label class="form-element-title" id="number-label" for="experience">Years of Experience in Current Practice Area</label>       <!----- YEARS OF EXPERIENCE INPUT ----->
                         <br>
                         <input class="form-element" type="number" name="experience" id="experience" placeholder="ex. 12" min="1" max="20" required>
                     </div>
 
                     <div class="dropdown form-parent">
-                        <label id="dropdown-label" for="dropdown">Which of the following best describes your current role?</label>       <!----- CURRENT ROLE INPUT ----->
+                        <label class="form-element-title" id="dropdown-label" for="dropdown">Which of the following best describes your current role?</label>       <!----- CURRENT ROLE INPUT ----->
                         <br>
                         <select class="form-element" id="dropdown"> 
                             <option value="" disabled selected hideen>Choose an option</option>
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="urgency form-parent">
-                        <p>How urgent is your lateral search?</p>
+                        <p class="form-element-title">How urgent is your lateral search?</p>
                         <input type="radio" name="urgency" id="urgent" value="urgent">
                         <label for="urgent">Urgent</label>
                         <br>
@@ -66,7 +66,7 @@
                     </div> <!----- END OF .URGENCY SECTION ----->
 
                     <div class="role-type form-parent">
-                        <p>What types of roles are you open to? (Select all that apply)</p>
+                        <p class="form-element-title">What types of roles are you open to? (Select all that apply)</p>
 
                         <input type="checkbox" id="associate" name="associate" value="associate">
                         <label for="associate">Associate in a law firm</label>
@@ -82,13 +82,15 @@
                     </div> <!----- END OF .ROLE-TYPE SECTION ----->
                     
                     <div class="more-info form-parent">
-                        <label for="more-info">Is there any other information you'd like to convey?</label>
+                        <label class="form-element-title" for="more-info">Is there any other information you'd like to convey?</label>
                         <br>
-                        <textarea class="form-element" id="more-info" name="more-info" wrap="hard" cols="40" rows="10"></textarea>
+                        <textarea class="form-element more-info" id="more-info" name="more-info" wrap="hard" cols="40" rows="10"></textarea>
                     </div> <!----- END OF .MORE-INFO SECTION ----->
-
-                    <button id="submit">Submit</button>
-
+                    
+                    <div class= "button">
+                        <button id="submit">Submit</button>
+                    </div>
+                    
                 </form>  <!----- END OF FORM ----->
             </section>  <!----- END OF FORM SECTION ----->
 

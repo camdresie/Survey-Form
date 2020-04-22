@@ -1,24 +1,19 @@
+/* Full page styles */
+
 * {
     box-sizing: border-box;
 }
 
-/* Full page styles */
-
-.wrapper {
-    background-image: url(img/people-working.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 15px;
+body {
+    margin: 0;
 }
 
 /* Header Styles */
 
 header {
     text-align: center;
-    background-color: slategray;
-    opacity: .8;
+    background-color: burlywood;
+    padding: 25px 0;
     margin-top: 0;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,11 +29,21 @@ header p {
     font-size: 1.3rem;
     width: 65%;
     margin: 0 auto;
+    color: darkslategray;
 }
 
+/* Form Styles */
+
+.wrapper {
+    background-image: url(img/people-working.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .form {
-    width: 60%;
+    width: 65%;
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
     padding: 2rem 3rem;
@@ -50,12 +55,37 @@ header p {
 }
 
 .form-element {
-    width: 80%;
+    width: 100%;
     height: 3em;
     border-radius: 2%;
     margin-top: 10px;
 }
 
+.more-info {
+    height: 200px;
+}
+
 .form-parent {
     margin-top: 35px;
+}
+
+.form-element-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#submit {
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    margin-top: 100px;
+    border-radius: 4%;
+}
+
+#submit:hover {
+    background-color: burlywood;
+}
+
+#submit:active {
+    background-color: green;
 }
