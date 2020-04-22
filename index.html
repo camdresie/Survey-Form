@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form for Attorney Candidates</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1 id="title">Attorney Lateral Questionnaire</h1>
+                <p>Thank you for taking the time to complete this questionnaire. Understanding your motivations for changing positions will help me to best serve you.</p>
+            </header>
+
+            <section class="form">
+                <form id="survey-form" method="GET">
+                    
+                    <label id="name-label" for="name">Name</label>        <!-----NAME INPUT ----->
+                    <input type="text" name="name" id="name" placeholder="Enter your first and last name" required>
+                    <br>
+
+                    <label id="email-label" for="email">Email</label>      <!-----EMAIL INPUT ----->
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                    <br>
+
+                    <label for="age">Law School Graduation Year</label>         <!-----CLASS YEAR INPUT ----->
+                    <input type="text" name="age" id="age" placeholder="ex. 2006" pattern="[0-9]{4}" required>
+                    <br>
+
+                    <label id="number-label" for="experience">Years of Experience in Current Practice Area</label>       <!----- YEARS OF EXPERIENCE INPUT ----->
+                    <input type="number" name="experience" id="experience" placeholder="ex. 12" min="1" max="20" required>
+                    <br>
+
+                    <label id="dropdown-label" for="dropdown">Which of the following best describes your current role?</label>       <!----- CURRENT ROLE INPUT ----->
+                    <select id="dropdown"> 
+                        <option value="" disabled selected hideen>Choose an option</option>
+                        <option value="Associate">Associate at a law firm</option>
+                        <option value="Partner">Partner at a law firm</option>
+                        <option value="Counsel">Counsel at a law firm</option>
+                        <option value="In-house">In-house counsel for a company</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+
+                    <div class="urgency">
+                        <p>How urgent is your lateral search?</p>
+                        <input type="radio" name="urgency" id="urgent" value="urgent">
+                        <label for="urgent">Urgent</label>
+                        <input type="radio" name="urgency" id="somewhat-urgent" value="somewhat-urgent">
+                        <label for="urgent">Somewhat urgent</label>
+                        <input type="radio" name="urgency" id="passive" value="passive">
+                        <label for="urgent">Just seeing what's out there</label>
+                    </div> <!----- END OF .URGENCY SECTION ----->
+
+                    <div class="role-type">
+                        <p>What types of roles are you open to? (Select all that apply)</p>
+
+                        <input type="checkbox" id="associate" name="associate" value="associate">
+                        <label for="associate">Associate in a law firm</label>
+
+                        <input type="checkbox" id="counsel" name="counsel" value="counsel">
+                        <label for="counsel">Of Counsel in a law firm</label>
+
+                        <input type="checkbox" id="partner" name="partner" value="partner">
+                        <label for="partner">Partner in a law firm</label>
+
+                        <input type="checkbox" id="in-house" name="in-house" value="in-house">
+                        <label for="in-house">In-house Counsel at a company</label>
+                    </div> <!----- END OF .ROLE-TYPE SECTION ----->
+                    
+                    <div class="more-info">
+                        <label for="more-info">Is there any other information you'd like to convey?</label>
+                        <br>
+                        <textarea id="more-info" name="more-info" wrap="hard" cols="40" rows="10"></textarea>
+                    </div> <!----- END OF .MORE-INFO SECTION ----->
+
+                    <button id="submit">Submit</button>
+
+                </form>  <!----- END OF FORM ----->
+            </section>  <!----- END OF FORM SECTION ----->
+
+
+
+
+        </div> <!-- WRAPPER DIV END -->
+    </body> <!-- BODY DIV END -->
+</html>
